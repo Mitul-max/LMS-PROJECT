@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <title>Online Learning Website</title>
+
+  
+
+
+<style>
+body{
+  background-color: rgba(225, 190, 231, 0.4);}
+.main > div {
+  display: inline-block;
+  width: 49%;
+  margin-top: 10px;
+}
+
+.two .register {
+  border: none;
+}
+.two .register h3 {
+  border-bottom-color: #909090;
+}
+.two .register .sep {
+  border-color: #909090;
+}
+
+.register {
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 7px solid #72b372;
+  border-radius: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 20px 0 #000000;
+}
+.register h3 {
+  margin: 0 15px 20px;
+  border-bottom: 2px solid #72b372;
+  padding: 5px 10px 5px 0;
+  font-size: 1.1em;
+}
+.register div {
+  margin: 0 0 15px 0;
+  border: none;
+}
+.register label {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  margin: 10px;
+}
+.register input[type="text"],
+.register input[type="password"] {
+  width: 65%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  padding: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.07);
+}
+.register input[type="text"]:focus,
+.register input[type="password"]:focus {
+  background: #ffffff;
+}
+.register .button {
+  font-size: 1em;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #59b969;
+  box-shadow: 0 1px 0 0 #60bd49 inset;
+  background: #63e651;
+  background: -webkit-linear-gradient(#63e651, #42753e);
+  background: -moz-linear-gradient(#63e651, #42753e);
+  background: -o-linear-gradient(#63e651, #42753e);
+  background: linear-gradient(#63e651, #42753e);
+}
+.register .button:hover {
+  background: #51db1c;
+  background: -webkit-linear-gradient(#51db1c, #6ba061);
+  background: -moz-linear-gradient(#51db1c, #6ba061);
+  background: -o-linear-gradient(#51db1c, #6ba061);
+  background: linear-gradient(#51db1c, #6ba061);
+}
+.register .sep {
+  border: 1px solid #72b372;
+  position: relative;
+  margin: 35px 20px;
+}
+.register .or {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  background: #f0f0f0;
+  text-align: center;
+  margin: -10px 0 0 -25px;
+  line-height: 20px;
+}
+.register .connect {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+input[type=text], select, textarea,.mb-3,input[type=password],input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.nav-link {
+  font-size: 1.5rem;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+    
+            
+            </header>
+            
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/" style="color: #000000;">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/login" style="color: #000000;">Login</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+ <!---->
+  <main class="px-3">
+            <form action="/register" method="POST">
+                <div class="mb-3" style="padding: 30px;">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Enter your username"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Enter your Password">
+
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter your email">
+                
+                
+                    
+                
+
+                
+                    <label for="exampleFormControlInput2" class="form-label">Mobile No</label>
+                    <input type="text" name="phone" class="form-control" id="exampleFormControlInput2"
+                        placeholder="Enter your mobile no">
+                
+                
+                    <label for="exampleFormControlInput3" class="form-label">What Role best Describes You</label>
+                    <input type="text" name="role" class="form-control" id="exampleFormControlInput3"
+                        placeholder="Enter your Role">
+                
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Login</button>
+
+
+        </main>     
+        
+<!---->
+        <!-- <main class="px-3">
+            <form action="/register" method="POST">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Enter your username"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+                
+                
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter your email">
+                
+                
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+                
+
+                
+                    <label for="exampleFormControlInput2" class="form-label">Mobile No</label>
+                    <input type="text" name="phone" class="form-control" id="exampleFormControlInput2"
+                        placeholder="Enter your mobile no">
+                
+                
+                    <label for="exampleFormControlInput3" class="form-label">Role</label>
+                    <input type="text" name="role" class="form-control" id="exampleFormControlInput3"
+                        placeholder="Enter your Role">
+                
+                
+                    <label for="exampleFormControlInput4" class="form-label">Language</label>
+                    <input type="text" name="language" class="form-control" id="exampleFormControlInput4"
+                        placeholder="Enter your Lang">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+
+
+        </main> -->
+        
+    
+
+
+</body>
+<script>
+$(document).ready(function(){
+  var placeholder = null;
+  $('input[type=text]').focus(function(){
+    placeholder = $(this).attr("placeholder");
+    $(this).attr("placeholder","");
+  });
+  $('input[type=text]').blur(function(){
+    $(this).attr("placeholder", placeholder);
+  });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</html>

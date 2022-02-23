@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+   
+    <title>Online Learning Website</title>
+
+    
+</head>
+<style>
+    body {
+  background-color: rgba(225, 190, 231, 0.4);
+    }  
+    .nav-link {
+      font-size: 1.5rem;
+      padding: 20px;
+      text-decoration: none;
+      color: black;
+    } 
+    .str {
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .bbt {
+        padding: 10px 20px;
+        margin-left: 70px;
+        margin-top: 20px;
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+    }
+    </style>
+<body>
+
+    <div>
+        <header>
+            <h1 style="padding: 10px; background-color: rgba(0, 0, 0); margin-bottom: 30px; color: white ;">
+            Hello <%=userdetails.username%>
+         </h1>
+            </header>
+            
+
+                <nav>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" href="/userprofile">Profile</a>
+                    <a class="nav-link" href="/task">Add task</a>
+                    <a class="nav-link" href="/course">Your Course</a>
+                    <a class="nav-link " href="/logout">Logout</a>
+                </nav>
+            
+        
+        
+
+        <main class="px-3">
+
+            <p style="font-size: 2rem; ">
+                Edit your details
+            </p>
+
+            <form action="/edit/<%= userdetails._id %>" method="POST">
+                <div class="mb-3 str">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" readonly class="form-control" value="<%= userdetails.username %>"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 str">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" value="<%= userdetails.email %>" name="email" class="form-control"
+                        id="exampleFormControlInput1">
+                </div>
+
+
+                <div class="mb-3 str">
+                    <label for="exampleFormControlInput2" class="form-label">Mobile No</label>
+                    <input type="text" value="<%= userdetails.phone %>" name="phone" class="form-control"
+                        id="exampleFormControlInput2">
+                </div>
+                <div class="mb-3 str">
+                    <label for="exampleFormControlInput3" class="form-label">Role</label>
+                    <input type="text" value="<%= userdetails.role %>" name="role" class="form-control"
+                        id="exampleFormControlInput3">
+                </div>
+                
+                <button type="button" class="btn btn-dark bbt">Confirm</button>
+
+        </main>
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
